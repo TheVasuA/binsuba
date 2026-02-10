@@ -381,7 +381,10 @@ export default function FuturesPositions({ positions, onRefresh, pendingOrders =
             <tbody>
               {pendingOrders.filter(order => order.type?.toUpperCase() === 'LIMIT').map((order, idx) => (
                 <tr key={`open-entry-${order.orderId || idx}`} className="border-b border-blue-700 bg-blue-900/30">
-                  <td className="py-3 px-4 text-blue-200">{order.symbol}</td>
+                  <td className="py-3 px-4 text-blue-200">
+                    {order.symbol}
+                    <span className={`ml-2 px-2 py-0.5 rounded text-xs font-semibold ${order.side === 'BUY' ?  'bg-red-500/20 text-red-400': 'bg-green-500/20 text-green-400'}`}>{order.side}</span>
+                  </td>
                   <td className="py-3 px-4 text-blue-200">{(order.amount * order.price).toLocaleString('en-US', { maximumFractionDigits: 8 })}</td>
                   <td className="py-3 px-4 text-blue-200">{order.price}</td>
                   <td className="py-3 px-4 text-blue-200">
