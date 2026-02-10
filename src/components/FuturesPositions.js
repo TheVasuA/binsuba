@@ -288,9 +288,13 @@ export default function FuturesPositions({ positions, onRefresh, pendingOrders =
                           {formatCurrency(position.stopLossPrice, 4).replace('$', '')}
                         </div>
                         <div className={
-                          position.stopLossPrice > position.entryPrice
-                            ? "text-green-400 text-md font-medium"
-                            : "text-red-500 text-md font-medium"
+                          position.side === 'SHORT'
+                            ? (position.stopLossPrice > position.entryPrice
+                                ? "text-red-500 text-md font-medium"
+                                : "text-green-400 text-md font-medium")
+                            : (position.stopLossPrice > position.entryPrice
+                                ? "text-green-400 text-md font-medium"
+                                : "text-red-500 text-md font-medium")
                         }>
                           {formatCurrency(position.stopLossValue, 0).replace('$', '')}
                         </div>
