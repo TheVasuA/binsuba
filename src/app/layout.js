@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Binance Portfolio Dashboard",
-  description: "Portfolio risk management dashboard for Binance",
+  description: "Portfolio risk management dashboard",
   icons: {
     icon: "/favicon.ico",
   },
