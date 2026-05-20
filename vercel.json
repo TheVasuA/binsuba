@@ -7,8 +7,8 @@
   "regions": ["sin1"],
   "env": {
 
-    "BINANCE_API_KEY": "MmSOEENCfktEIT0NkvGAAimfq996Zt4vp3atUKNojaYypG4lKHkJjbcAZiM5iKaB",
-    "BINANCE_API_SECRET": "vaQunR1p7LkmpQ15cFyGDz6PEw5uzHHYpfao4RH6uZcgvYyAV99dVfYM11oCn1V5",
+    "BINANCE_API_KEY": "daCuuWPojaWkt3ctUOFKkcf02S1zEqXToUTAujM1Hkw7pe0Ye7IM8RkUTMXjGH0p",
+    "BINANCE_API_SECRET": "rpxhHU7Qzgz1MgTBiot2TxrS0h23AZTulR8Z27fdkwkqFwhc70dsddh3kQe58Ofy",
     "BINANCE_TESTNET": "false",
     "UPSTASH_REDIS_REST_URL": "https://flying-weasel-5083.upstash.io",
     "UPSTASH_REDIS_REST_TOKEN": "ARPbAAImcDFmNDI0Njg2YmM3ZGY0YjU5YTgwZTFlNDYxNDM1NWFiMHAxNTA4Mw"
